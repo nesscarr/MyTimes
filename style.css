@@ -5,6 +5,8 @@ header {
   font-weight: bold;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
 }
 
 .logo {
@@ -20,10 +22,41 @@ header {
 
 nav {
   display: inline-block;
+  position: static;
 }
 
 nav a {
   color: black;
   margin: 20px 10px;
 
+}
+
+.main-container {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+padding: 30px 0px;
+}
+
+.main-container div {
+  border: 1px solid black;
+}
+
+.main-container .column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.main-container .column.large {
+  width: 630px;
+}
+
+.main-container .column.medium {
+  width: 300px;
+}
+
+.main-container .column.small {
+  width: 240px;
+  justify-content: center;
 }
