@@ -51,7 +51,6 @@ z-index: 5;
 }
 
 .main-container div {
-  border: 1px solid black;
 }
 
 .main-container .column {
@@ -72,12 +71,10 @@ z-index: 5;
 
 .main-container .column.small {
   width: 240px;
-  justify-content: center;
 }
 
 .image-story, .top-image {
   display: flex;
-  flex-basis: max-content;
   height: 300px;
 }
 
@@ -93,10 +90,29 @@ z-index: 5;
   font-size: 40px;
 }
 
-.story p, .top-text {
+.image-story span {
+  text-align: center;
+
+}
+
+.story-text, .top-text {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+
+.story, .top-story {
+  display: flex;
+  flex-direction: column;
+}
+
+.large .stories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.large .story {
+  margin: 0px 10px;
 }
 
 .image-story {
@@ -118,4 +134,22 @@ z-index: 5;
 
 .cats {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png")
+}
+
+.bite {
+  display: flex;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0px;
+  padding: 11px 20px;
+}
+
+.small .news-bites h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
